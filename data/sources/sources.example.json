@@ -1,0 +1,16 @@
+[
+  {
+    "product": "sample-product",
+    "version": "v1",
+    "url": "https://example.com/docs/v1/",
+    "licence": "REPLACE-WITH-REAL-LICENCE (verify before crawling)",
+    "retrieved_on": ""
+  },
+  {
+    "product": "sample-product",
+    "version": "v2",
+    "url": "https://example.com/docs/v2/",
+    "licence": "REPLACE-WITH-REAL-LICENCE (verify before crawling)",
+    "retrieved_on": ""
+  }
+]

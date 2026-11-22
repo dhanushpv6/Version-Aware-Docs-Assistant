@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "version-aware-docs-assistant"
+version = "0.1.0"
+description = "Version-filtered documentation RAG assistant"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Dhanush"}]
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "pydantic>=2.6",
+  "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=4", "ruff>=0.3"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
